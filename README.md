@@ -4,19 +4,11 @@
 
 This service is responsible for sending email to users.
 
-Finished :
-
-- [x] Send signup email to users
-
-TODO :
-
-- [ ] More email templates
-
 ## Prerequisites
 
 In this service, we use `gmail` to send emails, this approach is not recommended for production environments, but it is good for development and testing.
 
-To use `gmail` to send emails, we need to apply `app password` in your gmail account.
+To use `gmail` to send emails, we need to apply `app password` in your gmail account. [Link](https://myaccount.google.com/apppasswords)
 
 ```bash
 # Install dependencies
