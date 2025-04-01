@@ -33,7 +33,7 @@ async function emailTemplates(template, receiver, locals) {
   });
   const email = new Email({
     message: {
-      from: `LoginHub <${config.SENDER_EMAIL}>`,
+      from: `DataHub <${config.SENDER_EMAIL}>`,
     },
     send: true,
     preview: false,
