@@ -1,17 +1,17 @@
 import { jest } from '@jest/globals';
 
-jest.unstable_mockModule('@/queues/connect.js', () => ({
+jest.unstable_mockModule('#src/queues/connect.js', () => ({
   createConnection: jest.fn(),
 }));
-jest.unstable_mockModule('@/utils/logger.js', () => ({
+jest.unstable_mockModule('#src/utils/logger.js', () => ({
   default: {
     info: jest.fn(),
     error: jest.fn(),
   },
 }));
 
-const { createConnection } = await import('@/queues/connect.js');
-const { consumeDirectEmailMessages } = await import('@/queues/consumer.js');
+const { createConnection } = await import('#src/queues/connect.js');
+const { consumeDirectEmailMessages } = await import('#src/queues/consumer.js');
 
 describe('Email Consumer', () => {
   beforeEach(() => {

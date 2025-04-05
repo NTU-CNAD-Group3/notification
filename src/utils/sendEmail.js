@@ -4,8 +4,8 @@ import { fileURLToPath } from 'url';
 import nodemailer from 'nodemailer';
 import Email from 'email-templates';
 
-import logger from '@/utils/logger.js';
-import config from '@/config.js';
+import logger from '#src/utils/logger.js';
+import config from '#src/config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

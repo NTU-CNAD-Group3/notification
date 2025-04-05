@@ -3,10 +3,10 @@ import 'express-async-errors';
 import express from 'express';
 import cors from 'cors';
 
-import routes from '@/routes/index.js';
-import config from '@/config.js';
-import logger from '@/utils/logger.js';
-import { consumeDirectEmailMessages } from '@/queues/consumer.js';
+import routes from '#src/routes/index.js';
+import config from '#src/config.js';
+import logger from '#src/utils/logger.js';
+import { consumeDirectEmailMessages } from '#src/queues/consumer.js';
 
 const app = express();
 

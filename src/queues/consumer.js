@@ -1,7 +1,7 @@
-import { sendEmail } from '@/utils/sendEmail.js';
-import { createConnection } from '@/queues/connect.js';
-import config from '@/config.js';
-import logger from '@/utils/logger.js';
+import { sendEmail } from '#src/utils/sendEmail.js';
+import { createConnection } from '#src/queues/connect.js';
+import config from '#src/config.js';
+import logger from '#src/utils/logger.js';
 
 export async function consumeDirectEmailMessages(exchangeName, routingKey, queueName) {
   try {
