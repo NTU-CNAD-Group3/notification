@@ -16,7 +16,7 @@ export async function consumeDirectEmailMessages(exchangeName, routingKey, queue
       const { receiverEmail, verifyLink, template } = JSON.parse(msg.content.toString());
       const locals = {
         appLink: `${config.CLIENT_URL}`,
-        appIcon: '../assets/icon.png',
+        appIcon: 'https://cnad.info/icon.png',
         verifyLink,
       };
       await sendEmail(template, receiverEmail, locals);
